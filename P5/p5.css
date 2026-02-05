@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.top-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+
+  background: rgba(221, 151, 190, 0.9); 
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.c-eye{
+  width: 75px;   /* 你想要多大就改这里：32 / 48 / 64 都行 */
+  height: auto;
+  display: block;
+
+  position: absolute;
+  top: -14px;      
+  left: 720px;     
+}
+
+.page{
+  padding: 80px 24px 24px; /* 留出 topbar 空间 */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url("bg2.png");   /* ← 换成你的照片名 */
+  background-size: cover;           /* 铺满屏幕 */
+  background-position: center;      /* 居中 */
+  background-repeat: no-repeat;
+  background-attachment: fixed;     /* 滚动时背景不动（高级感） */
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;   
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;                 
+  max-width: 900px;           
+  margin: 40px auto;          
+  background: #ffffffcc;      
+  padding: 30px;             
+  border-radius: 20px;        
+  backdrop-filter: blur(4px); 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+
+  margin: 0 auto 80px;
+}
+
+/* .project-left {
+  flex: 1;
+  padding-right: 30px;
+} */
+
+.project-left h2 {
+  flex: 1;
+  padding-right: 30px;
+  font-size: 30px;
+}
+
+.project-left p {
+  margin: 0;
+  line-height: 1.3;
+  font-size: 15px;
+}
+
+
+.frame {
+  width: 250px;    
+  height: 250px;
+  overflow: hidden; 
+}
+
+.frame iframe {
+  width: 500px;       
+  height: 500px;
+  transform: scale(0.5);         
+  transform-origin: top left;    
+  border: none;
+  border-radius: 10px;
+}
+
+.about-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* 内容水平居中 */
+  justify-content: flex-start;
+  padding-top: 80px;
+  min-height: calc(100vh - 120px);
+}

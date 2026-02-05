@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+/* 直接复用 home 的 top bar 样式 */
+
+.top-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+
+  background: rgba(255, 255, 255, 0.3);
+  color: #000000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  z-index: 1000;   
+}
+/* camera 页面背景 */
+
+.camera-page{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("bg1.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 0;
+}
+
+.c-eye{
+  width: 75px;   /* 你想要多大就改这里：32 / 48 / 64 都行 */
+  height: auto;
+  display: block;
+
+  position: absolute;
+  top: -14px;      
+  left: 720px;     
+}
+
+.camera-frame{
+  position: absolute;
+
+  top: 150px;     
+  left: 400px;     
+
+  width: 47.5%;
+  height: 59.7%; 
+
+  border: 8px solid #79c9c8;
+  border-radius: 8px;
+
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  
+}
