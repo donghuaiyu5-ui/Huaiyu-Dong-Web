@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+/* 直接复用 home 的 top bar 样式 */
+
+.top-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+
+  background: rgba(99, 93, 184, 0.9); 
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.c-eye{
+  width: 75px;   /* 你想要多大就改这里：32 / 48 / 64 都行 */
+  height: auto;
+  display: block;
+
+  position: absolute;
+  top: -14px;      
+  left: 720px;     
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url("bg4.png");   /* ← 换成你的照片名 */
+  background-size: cover;           /* 铺满屏幕 */
+  background-position: center;      /* 居中 */
+  background-repeat: no-repeat;
+  background-attachment: fixed;     /* 滚动时背景不动（高级感） */
+}
+
+.page{
+  padding: 80px 24px 24px; /* 留出 topbar 空间 */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.photo-gif{
+  width: 200px;        /* 控制大小 */
+  height: auto;
+  display: block;
+  transform: translateX(60px);     /* 居中 */
+  border-radius: 20px;
+}
