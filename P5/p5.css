@@ -96,18 +96,20 @@ body {
 } */ 
 
 .frame {
-  width: 250px;    
+  width: 250px;
   height: 250px;
-  overflow: hidden; 
+  overflow: hidden;
   border-radius: 14px;
+  background: #000;
 }
 
 .frame iframe {
-  width: 500px;       
+  width: 500px;
   height: 500px;
-  transform: scale(0.5);         
-  transform-origin: top left;    
+  transform: scale(0.5);
+  transform-origin: top left;
   border: none;
+  display: block;
 }
 
 .about-center {
