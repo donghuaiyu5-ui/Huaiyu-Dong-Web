@@ -138,3 +138,20 @@ body {
   display: flex;
   justify-content: flex-end; 
 }
+
+.card-media img{
+  width: 500px;
+  border-radius: 18px;
+  display: block;
+
+  transition: 0.4s ease;
+  cursor: pointer;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.card-media img:hover{
+  transform: scale(1.03);
+
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
